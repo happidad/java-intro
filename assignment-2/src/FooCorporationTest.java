@@ -6,7 +6,10 @@ import org.junit.Test;
  * Created by kevindlee on 7/19/15.
  */
 public class FooCorporationTest {
-
+    /**
+     * Test function that tests the nominal input values
+     * @throws Exception
+     */
     @Test
     public void testCalculatePayNominal() throws Exception {
         double expected = 320;
@@ -14,6 +17,10 @@ public class FooCorporationTest {
         Assert.assertEquals(expected, result,0.001    );
     }
 
+    /**
+     * Test function that tests overtime (hours > 40)
+     * @throws Exception
+     */
     @Test
     public void testCalculatePayOvertime() throws Exception {
         double expected = 720;
@@ -21,6 +28,10 @@ public class FooCorporationTest {
         Assert.assertEquals(expected, result,0.001    );
     }
 
+    /**
+     * Test function that tests pay below minimum wage (<$8.00)
+     * @throws Exception
+     */
     @Test
     public void testCalculatePayMinimumWage() throws Exception {
         double expected = 0;
@@ -28,6 +39,10 @@ public class FooCorporationTest {
         Assert.assertEquals(expected, result,0.001    );
     }
 
+    /**
+     * Test function that tests working more than the allowable hours (>60)
+     * @throws Exception
+     */
     @Test
     public void testCalculatePayTooManyHours() throws Exception {
         double expected = 0;
@@ -35,6 +50,10 @@ public class FooCorporationTest {
         Assert.assertEquals(expected, result,0.001    );
     }
 
+    /**
+     * Test function that tests the given test cases in the lab
+     * @throws Exception
+     */
     @Test
     public void testCalculatePayExercise() throws Exception {
         double expected = 0;

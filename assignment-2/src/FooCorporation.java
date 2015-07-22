@@ -13,6 +13,13 @@ public class FooCorporation {
         }
 
     }
+
+    /**
+     *
+     * @param basepay
+     * @param hours
+     * @return the pay earned
+     */
     public static final double calculatePay(double basepay, int hours){
         DecimalFormat df = new DecimalFormat("0.00");
         // Overtime rate is 1.5x more when more than 40 hours
